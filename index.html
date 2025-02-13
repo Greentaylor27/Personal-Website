@@ -14,35 +14,126 @@
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
         <!-- Custom Links -->
         <script src="scripts.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="row">
-        <header class="col-lg-3 bg-gainsboro p-1">
-            <div class="container-fluid mx-2 p-1">
-                <img src="Images/selfi.png" alt="Author Headshot" class="img-thumbnail img-fluid" id="headshot">
-            </div>
-            <div class="container-fluid mx-1 p-1">
-                <div class="d-flex justify-content-center">
-                    <img src="Images/envelope-paper-fill.svg" alt="Email image" height="25" class="m-2">
-                    <p class="text-center my-auto mx-2">: Taylor.Green@atlasschool.com</p>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a href="#" class="navbar-brand fw-bold fs-4 p-2">Taylor Green</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item p-1"><a href="#hero" class="nav-link active">Home</a></li>
+                            <li class="nav-item p-1"><a href="#about" class="nav-link">About</a></li>
+                            <li class="nav-item p-1"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                            <li class="nav-item p-1"><a href="#contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <img src="Images/github.svg" alt="Github Logo" height="25" class="m-2">
-                    <p class="text-center my-auto mx-2">: Greentaylor27</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <img src="Images/linkedin (1).svg" alt="Linkedin Logo" height="25" class="m-2">
-                    <p class="text-center my-auto mx-2">: linkedin.com/in/greentaylor27</p>
-                </div>
-            </div>
+            </nav>
         </header>
-        <main class="row col-lg-9 bg-transparent p-1">
-            <div class="container-fluid" id="linkedin"></div>
-            <div class="container-fluid" id="github"></div>
-            <div class="container-fluid" id="bio"></div>
-        </main>
-        <footer class="col bg-dark p-1 mt-1"></footer>
+
+        <!-- Hero Section -->
+        <section id="hero" class="d-flex align-items-center">
+            <div class="container text-center text-white">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 mb-4">
+                        <img src="Images/selfi.webp" class="img-fluid rounded-circle shadow" alt="My (Taylor Green) Headshot" id="headShot">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold mb-3">Hello, I'm Taylor</h1>
+                        <p class="kead mb-4">A passionate Fullstack Software Developer based in Tulsa, Oklahoma. <br>
+                        I build amazing things with, React, JavaScript, Python, CSS, HTML. </p>
+                        <a href="#portfolio" class="btn btn-primary btn-lg">View my Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section-->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">About Me</h2>
+                        <p class="lead">I am a passionate Fullstack Developer Student located in Tulsa, Oklahoma. With over a years worth of experience, I specialize in Bootstrap, JavaScript (JQuery, Node). My journey began with, me attempting to get a certification in Cybersecurity. I quickly found out that I had gone too finite, a lot of the concepts they were going over were way out of my wheelhouse so I decided to go back and learn the basics.
+                        (i.e. Computer Science and Fullstack Web Development). With that I decided to focus mainly on back-end development ever since.</p>
+                        <p>In my spare time, I enjoy tabletop gaming and video games. I'm always excited to take on new challenges and collaborate with other creative minds to build amazing things!</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3">Skills & Technologies</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                HTML5
+                                <span class="badge bg-success rounded-pill">Expert</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Git
+                                <span class="badge bg-warning rounded-pill">Advanced</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                JavaScript
+                                <span class="badge rounded-pill bg-danger">Intermediate</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Python
+                                <span class="badge bg-warning rounded-pill">Advanced</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                CSS3
+                                <span class="badge bg-danger rounded-pill">Intermediate</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+         <section id="portfolio" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-5 text-center">My Portfolio</h2>
+                <div class="row">
+                    <!--First Project-->
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center">
+                            <img src="Images/c0fd0eba-59b0-4297-af8c-453757c458a3 (1).jpg" class="card-img-top" alt="Mean Green Animations">
+                            <div class="card-body">
+                                <h5 class="card-title">Mean Green Animation Project</h5>
+                                <p class="card-text">The final project for my third trimester at Atlas school. This project was the most fun I've had a project. <br><br>
+                                I spent the most time working on this project. I completely designed it myself and it is done almost EXCLUSIVELY in BootStrap.</p>
+                                <a href="https://github.com/Greentaylor27/T3-Frontend_From_Scratch?tab=readme-ov-file" class="btn btn-primary">View project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Second Project-->
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center">
+                            <img src="Images/BlueOnion_NoBackground.png" class="card-img-top" alt="The Shallot">
+                            <div class="card-body">
+                                <h5 class="card-title">The Shallot</h5>
+                                <p class="card-text">The final project for my second trimester at Atlas. This project was one of my most challenging projects to date. <br>
+                                I had spent weeks prior to this project working on intro level back-end development, I just could not get the dependencies to install locally, in a python virtual environment, even in a docker I just couldn't get anything to work luckily and fortunately for me this was a group project. <br>
+                                My partner on this project was a life-saver and managed to cut out time to make it to campus so we could co-work and co-code together.</p>
+                                <a href="https://github.com/DAlsabrook/Hack_Sprint" class="btn btn-primary">Check out The Shallot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+         </section>
+
     </body>
 </html>
